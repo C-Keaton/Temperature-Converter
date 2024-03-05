@@ -19,9 +19,9 @@ const createMessage = () => {
   console.log(`Random Number is: ${randomNum}`)
 }
 
-//Using the enterNum the function creates a random number between 0 and enterNum
+//Using the enterNum the function creates a random number between 0 and enterNum. Math.round rounds to number to the closest whole number.
 const rand = (enterNum) => {
-  randomNum = Math.random() * enterNum
+  randomNum = Math.round(Math.random() * enterNum)
 }
 
 //starts the program
