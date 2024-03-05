@@ -8,11 +8,20 @@ const createMessage = () => {
   convertToCelsius(prompt("Enter Fahrenheit temperature to convert to Celsius: "))
   console.log(`The tempature in Celsius is: ${Celsius}`);
 
-  if(Celsius <= 32) {
-    console.log(`I hope you have a coat today.`)
-  }
   if(Celsius <= 0) {
     console.log(`Wow! That is really cold`)
+  }
+  
+  else if(Celsius <= 13) {
+    console.log(`I hope you have a coat today.`)
+  }
+  
+  else if(Celsius <= 0) {
+    console.log(`Wow! That is really cold`)
+  }
+
+  else if(Celsius >= 13) {
+    console.log(`Nice tempature`)
   }
 
   rand(prompt("Put a random number: "))
